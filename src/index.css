@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Italiana&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Montserrat", sans-serif;
+  --font-accent: "Italiana", serif;
+  --font-cta: "Montserrat", sans-serif;
+
+  --color-gold-bright: #FFD700;
+  --color-gold-elegant: #B8860B;
+  --color-gold-champagne: #FFF8DC;
+  --color-luxury-black: #000000;
+  --color-soft-black: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-black text-white font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold uppercase tracking-tight;
+  }
+}
+
+@layer utilities {
+  .gold-gradient {
+    background: linear-gradient(135deg, #FFD700 0%, #B8860B 50%, #FFD700 100%);
+  }
+  .gold-text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #FFD700 0%, #B8860B 50%, #FFD700 100%);
+  }
+  .gold-border-gradient {
+    border-image: linear-gradient(135deg, #FFD700 0%, #B8860B 100%) 1;
+  }
+  .gold-shadow {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  }
+  .gold-shadow-hover:hover {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+  }
+}
