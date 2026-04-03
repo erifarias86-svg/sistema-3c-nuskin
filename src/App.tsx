@@ -220,15 +220,9 @@ export default function App() {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-center mb-8"
           >
-            <div className="bg-white/90 p-4 rounded-xl mb-4 border border-gold-bright/30 gold-shadow flex items-center gap-4">
-              <img 
-                src="https://i.imgur.com/g23iHVb.png" 
-                alt="Nu Skin Logo" 
-                className="h-14 w-auto object-contain"
-                referrerPolicy="no-referrer"
-              />
-              <span className="text-black font-sans font-bold text-sm tracking-widest uppercase">
-                Exclusivo para Distribuidoras
+            <div className="bg-gold-bright/10 px-3 sm:px-6 py-3 rounded-xl mb-4 border border-gold-bright/30 gold-shadow flex items-center justify-center">
+              <span className="text-gold-bright font-sans font-bold text-[10px] sm:text-sm md:text-base tracking-widest uppercase text-center whitespace-nowrap">
+                Si sos distribuidora de Nu Skin, esto es para vos
               </span>
             </div>
           </motion.div>
@@ -238,8 +232,8 @@ export default function App() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-2xl md:text-5xl font-sans font-black leading-tight mb-8">
-              Pasá de subir contenido que nadie mira… a generar conversaciones <span className="gold-text-gradient">TODOS los días</span> y empezar a vender en los próximos <span className="text-gold-bright underline decoration-gold-elegant">3 días</span>
+            <h1 className="text-xl sm:text-2xl md:text-5xl font-sans font-black leading-tight mb-8 max-w-[90vw] mx-auto">
+              Pasá de subir contenido que nadie mira… a generar conversaciones <span className="gold-text-gradient">TODOS los días</span> y cerrar tus primeras ventas <span className="text-gold-bright underline decoration-gold-elegant">esta misma semana</span>
             </h1>
 
             <motion.div
@@ -270,7 +264,7 @@ export default function App() {
                 className="w-full md:w-auto"
                 onClick={() => document.getElementById('entregables')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                🚀 SÍ, QUIERO EMPEZAR A VENDER EN 3 DÍAS
+                🚀 SÍ, QUIERO CERRAR MIS PRIMERAS VENTAS ESTA SEMANA
               </Button>
               <p className="text-gold-elegant/80 font-sans font-medium text-lg">Acceso inmediato • Oferta de lanzamiento</p>
             </div>
@@ -374,7 +368,7 @@ export default function App() {
       <section className="py-12 md:py-24 px-4 bg-soft-black">
         <div className="max-w-6xl mx-auto">
           <SectionTitle subtitle="Sin trabarte, sin improvisar, sin perder ventas">
-            ⚡ En los próximos días vas a lograr:
+            ⚡ Esta misma semana vas a lograr:
           </SectionTitle>
           
           <div className="max-w-3xl mx-auto">
@@ -464,7 +458,7 @@ export default function App() {
             className="relative rounded-2xl overflow-hidden border border-gold-bright/20 gold-shadow"
           >
             <img 
-              src="https://i.imgur.com/wq60m8T.png" 
+              src="https://i.imgur.com/RqFwfdy.jpeg" 
               alt="Visualización del Sistema 3C" 
               className="w-full h-auto object-cover"
               referrerPolicy="no-referrer"
@@ -703,23 +697,19 @@ export default function App() {
       <footer className="py-16 px-4 border-t border-gold-elegant/10 bg-black/50">
         <div className="max-w-6xl mx-auto flex flex-col items-center gap-8">
           <div className="flex flex-col items-center gap-4">
-            <div className="bg-white/90 p-3 rounded-lg border border-gold-bright/20 flex items-center gap-3">
-              <img 
-                src="https://i.imgur.com/g23iHVb.png" 
-                alt="Nu Skin Logo" 
-                className="h-10 w-auto"
-                referrerPolicy="no-referrer"
-              />
-              <span className="text-black font-sans font-bold text-xs tracking-widest uppercase">
-                Nu Skin Partner
+            <div className="bg-gold-bright/10 px-3 sm:px-6 py-3 rounded-lg border border-gold-bright/20 flex items-center justify-center">
+              <span className="text-gold-bright font-sans font-bold text-[10px] sm:text-xs tracking-widest uppercase text-center whitespace-nowrap">
+                Si sos distribuidora de Nu Skin, esto es para vos
               </span>
             </div>
             <p className="text-gold-elegant font-sans font-bold tracking-widest text-sm uppercase">SISTEMA 3C NU SKIN</p>
           </div>
           
-          <div className="text-center text-gray-500 text-xs max-w-2xl space-y-4">
+          <div className="text-center text-gray-500 text-[10px] sm:text-xs max-w-3xl space-y-4 border-t border-white/5 pt-8">
             <p>© 2026 Todos los derechos reservados.</p>
             <p>Este sitio no es parte de Facebook ni de Meta Inc. Además, este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.</p>
+            <p className="uppercase font-bold text-gray-400">Descargo de Responsabilidad Legal:</p>
+            <p>Este producto es de carácter exclusivamente educativo e informativo. No garantizamos resultados específicos ni ingresos determinados. Este sitio y el Sistema 3C NO están afiliados, asociados, autorizados ni respaldados por Nu Skin Enterprises, Inc. de ninguna manera. El uso de nombres, marcas o productos de terceros se realiza únicamente con fines descriptivos y de identificación.</p>
             <p className="text-gold-elegant/40 italic">Exclusivo para distribuidoras independientes de Nu Skin.</p>
           </div>
         </div>
