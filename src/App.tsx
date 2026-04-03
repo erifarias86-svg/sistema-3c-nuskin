@@ -54,7 +54,7 @@ const Button = ({ children, className = "", primary = true, onClick, href }: { c
 };
 
 const SectionTitle = ({ children, subtitle, light = false }: { children: React.ReactNode, subtitle?: string, light?: boolean }) => (
-  <div className="text-center mb-16">
+  <div className="text-center mb-10 md:mb-16">
     <motion.h2 
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -283,7 +283,7 @@ export default function App() {
       </header>
 
       {/* 3. INTRO/HISTORIA */}
-      <section className="py-24 px-4 bg-soft-black overflow-hidden">
+      <section className="py-12 md:py-24 px-4 bg-soft-black overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -342,10 +342,10 @@ export default function App() {
       </section>
 
       {/* 4. UVP (SISTEMA 3C) */}
-      <section className="py-24 px-4">
+      <section className="py-12 md:py-24 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="border-2 border-gold-bright p-8 md:p-16 bg-soft-black relative gold-shadow">
-            <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gold-bright text-black px-6 py-2 font-cta text-sm tracking-widest">
+            <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gold-bright text-black px-4 py-1 md:px-6 md:py-2 font-cta text-[10px] md:text-sm tracking-widest whitespace-nowrap">
               EL MÉTODO DEFINITIVO
             </div>
             
@@ -371,7 +371,7 @@ export default function App() {
       </section>
 
       {/* 5. BULLETS DE BENEFICIOS */}
-      <section className="py-24 px-4 bg-soft-black">
+      <section className="py-12 md:py-24 px-4 bg-soft-black">
         <div className="max-w-6xl mx-auto">
           <SectionTitle subtitle="Sin trabarte, sin improvisar, sin perder ventas">
             ⚡ En los próximos días vas a lograr:
@@ -407,7 +407,7 @@ export default function App() {
       </section>
 
       {/* 6. SOCIAL PROOF (WHATSAPP STYLE) */}
-      <section className="py-24 px-4 relative overflow-hidden">
+      <section className="py-12 md:py-24 px-4 relative overflow-hidden">
         {/* Background texture for chat feel */}
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png")', backgroundSize: '400px' }}></div>
         
@@ -429,7 +429,7 @@ export default function App() {
       </section>
 
       {/* 9. ENTREGABLES */}
-      <section id="entregables" className="py-24 px-4 bg-soft-black">
+      <section id="entregables" className="py-12 md:py-24 px-4 bg-soft-black">
         <div className="max-w-6xl mx-auto">
           <SectionTitle subtitle="Todo lo que necesitás para vender sin pensar">
             📦 CONTENIDO DEL SISTEMA
@@ -475,7 +475,7 @@ export default function App() {
       </section>
 
       {/* 10. BONIFICACIONES */}
-      <section className="py-24 px-4">
+      <section className="py-12 md:py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <SectionTitle subtitle="Valor total de bonos: $75.000">
             🎁 BONOS EXCLUSIVOS
@@ -506,9 +506,9 @@ export default function App() {
       </section>
 
       {/* 11. PRICING */}
-      <section className="py-24 px-4 bg-soft-black">
-        <div className="max-w-3xl mx-auto text-center border-2 border-gold-bright p-12 bg-luxury-black gold-shadow relative">
-          <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gold-bright text-black px-8 py-2 font-cta text-sm tracking-widest">
+      <section className="py-12 md:py-24 px-4 bg-soft-black">
+        <div className="max-w-3xl mx-auto text-center border-2 border-gold-bright p-8 md:p-12 bg-luxury-black gold-shadow relative">
+          <div className="absolute -top-4 md:-top-6 left-1/2 -translate-x-1/2 bg-gold-bright text-black px-4 py-1 md:px-8 md:py-2 font-cta text-[10px] md:text-sm tracking-widest whitespace-nowrap">
             OFERTA POR TIEMPO LIMITADO
           </div>
           
@@ -569,7 +569,7 @@ export default function App() {
       </section>
 
       {/* 7. GARANTÍA */}
-      <section className="py-24 px-4">
+      <section className="py-12 md:py-24 px-4">
         <div className="max-w-4xl mx-auto text-center border border-gold-elegant/30 p-12 bg-soft-black rounded-lg">
           <ShieldCheck size={64} className="text-gold-bright mx-auto mb-8" />
           <h2 className="text-2xl md:text-3xl font-sans font-bold mb-6 gold-text-gradient">GARANTÍA DE 7 DÍAS</h2>
@@ -580,7 +580,7 @@ export default function App() {
       </section>
 
       {/* 8. "A QUIÉN NO ES PARA" */}
-      <section className="py-24 px-4 bg-soft-black">
+      <section className="py-12 md:py-24 px-4 bg-soft-black">
         <div className="max-w-3xl mx-auto">
           <h3 className="text-2xl md:text-4xl font-sans font-bold text-center mb-12 text-gray-400">❌ Este sistema NO es para vos si:</h3>
           <div className="space-y-6">
